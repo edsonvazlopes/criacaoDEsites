@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Banda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Adiciona o CSS do Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Importa o Header -->
+    <div id="header"></div>
+
+    <main>
+        <!-- Vídeo em Loop -->
+        <video class="video-section" autoplay loop muted width="100%">
+            <source src="assets/videos/oqueimportaeviver-lite.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+
+
+
+        
+        <!-- Estrutura do Carrossel -->
+        <div class="carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=7Ep38dLIwHg&ab_channel=DhinhoVaz-Topic" target="_blank">
+                            <img src="assets/img/capa1-ali.jpg" alt="Imagem 1 da Banda">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=bJ2_ITJCu5w&ab_channel=DhinhoVaz-Topic" target="_blank">
+                            <img src="assets/img/capa2-0803.jpg" alt="Imagem 2 da Banda">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://music.youtube.com/playlist?list=OLAK5uy_kWyuMCpbUPQ74AL0xqv7H7ZHyZj5-KJ-8&si=UHLXl4HB8rNeDYxf" target="_blank">
+                            <img src="assets/img/capa3-tduv.jpg" alt="Imagem 3 da Banda">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=VILo3Gohp1E&ab_channel=DhinhoVaz-Topic" target="_blank">
+                            <img src="assets/img/capa4-cada.jpg" alt="Imagem 4 da Banda">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Player de Música -->
+        <footer id="footer">
+            <audio controls>
+                <source src="assets/audios/Cada_vez_mais-remasterizada.wav" type="audio/wav">
+                Seu navegador não suporta o player de áudio.
+            </audio>
+        </footer>
+    </main>
+
+    <!-- Adiciona o JS do Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Importa o seu script -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Inicializa o Swiper
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // Para que o carrossel seja contínuo
+            autoplay: {
+                delay: 3000, // Intervalo entre as imagens (em milissegundos)
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // Botão de navegação
+                prevEl: '.swiper-button-prev', // Botão de navegação
+            },
+            pagination: {
+                el: '.swiper-pagination', // Paginação
+                clickable: true, // Permite clicar nos pontos da paginação
+            },
+        });
+    </script>
+</body>
+</html>

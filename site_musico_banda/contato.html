@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Nome da Banda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Importa o Header -->
+    <div id="header"></div>
+
+    <main>
+        <h1>Contato</h1>
+        <p>Se você deseja entrar em contato com a banda, tem dúvidas ou gostaria de agendar uma apresentação, use o formulário abaixo ou entre em contato conosco diretamente pelos meios disponíveis.</p>
+
+        <!-- Formulário de Contato -->
+        <section id="formulario-contato">
+            <h2>Envie uma Mensagem</h2>
+            <form action="mailto:contato@bandanome.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Informações de Contato -->
+        <section id="informacoes-contato">
+            <h2>Outros Meios de Contato</h2>
+            <p>Você também pode nos encontrar nas seguintes plataformas:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:contato@bandanome.com">contato@bandanome.com</a></li>
+                <li><strong>Telefone:</strong> (XX) XXXXX-XXXX</li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/bandanome" target="_blank">@bandanome</a></li>
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/bandanome" target="_blank">fb.com/bandanome</a></li>
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/bandanome" target="_blank">@bandanome</a></li>
+            </ul>
+        </section>
+
+        <!-- Endereço físico (caso necessário) -->
+        <section id="endereco">
+            <h2>Endereço</h2>
+            <p>Você pode nos encontrar fisicamente no seguinte endereço:</p>
+            <address>
+                Rua Exemplo, 123, Bairro Exemplo, Cidade - Estado, Brasil
+            </address>
+        </section>
+
+    </main>
+
+    <!-- Importa o Footer -->
+    <div id="footer"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
